@@ -33,12 +33,12 @@ public class Person {
 
     public static void main(String[] args) {
 
-        List<Person> perons = List.of(new Person("olaf", "www")),
-            new Person("kamila", "kiel");
+        List<Person> perons = List.of(new Person("olaf", "www"),
+            new Person("kamila", "kiel"));
 
 //        perons.sort((o1, o2) -> Person.orderPersons(o1, o2));
-        perons.sort(Person::orderPersons);
-        perons.sort(MyComparing::comparePerson);
-        perons.sort((first, second) -> MyComparing.comparePerson(first, second));
+//        perons.sort(Person::orderPersons);
+//        perons.sort(MyComparing::comparePerson);
+//        perons.sort((first, second) -> MyComparing.comparePerson(first, second));
     }
 }
